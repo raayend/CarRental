@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from './components/Navbar'
 
 const App = () => {
+
+  const [showLogin, setShowLogin] = useState(false)
   return (
-    <div>
-      <Navbar />
-    </div>
+    <>
+      <Navbar setShowLogin={setShowLogin} />
+    </>
   )
 }
 
